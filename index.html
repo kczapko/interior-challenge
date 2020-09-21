@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior Consultant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__logo">
+        <a class="main-header__logo-link" href="#">This Interior</a>
+      </div>
+      <nav class="main-header__nav">
+        <ul class="main-header__menu">
+          <li class="main-header__menu-item main-header__menu-item--active">
+            <a class="main-header__menu-item-link" href="#">Home</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a class="main-header__menu-item-link" href="#">Collection</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a class="main-header__menu-item-link" href="#">About</a>
+          </li>
+          <li class="main-header__menu-item">
+            <a class="main-header__menu-item-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="main-header__menu-button"><span>Toggle menu</span></button>
+    </header>
+    <main>
+      <article class="main-article">
+        <header class="main-article__header">
+          <h1 class="main-article__title">Modern interior</h1>
+          <p class="main-article__description">
+            A full-service residention & commercial interior design and staging
+            company offering professional organizing & eco-services
+          </p>
+          <a class="main-article__more" href="#">Read more</a>
+        </header>
+        <figure class="main-article__figure">
+          <div class="main-article__image-wrapper">
+            <img class="main-article__image" src="img/photo1.png" alt="" />
+          </div>
+          <figcaption class="main-article__caption">
+            <div class="main-article__author">
+              <img
+                class="main-article__author-image"
+                src="img/photo2.png"
+                alt=""
+              />
+              <div class="main-article__author-wrap">
+                <div class="main-article__author-name">Aliza Webber</div>
+                <div class="main-article__author-position">
+                  Interiot designer
+                </div>
+              </div>
+            </div>
+            <div class="main-article__caption-title">
+              Designed in 2020 by Aliza Webber
+            </div>
+          </figcaption>
+        </figure>
+      </article>
+    </main>
+    <footer><span>Krzysztof Czapko @ DevChallenges.io</span></footer>
+
+    <script>
+      const menuButton = document.querySelector(".main-header__menu-button");
+      menuButton.addEventListener("click", () => {
+        document.body.classList.toggle("menu-open");
+      });
+    </script>
+  </body>
+</html>
